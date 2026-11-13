@@ -1,0 +1,21 @@
+{
+  "name": "gin-harness-showcase",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Architecture showcase & sanitized TypeScript modules for GIN Multi-Agent Swarm Harness and Enterprise ERP Control Plane.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.json && node --test dist/tests/showcase.test.js",
+    "bench": "tsc -p tsconfig.json && node dist/scripts/bench.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
